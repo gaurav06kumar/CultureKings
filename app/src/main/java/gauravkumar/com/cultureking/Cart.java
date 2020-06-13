@@ -83,6 +83,9 @@ public class Cart extends AppCompatActivity {
                 savedItemsList.setAdapter(adapter);
                 cartLoadingBar.setVisibility(View.GONE);
                 savedItemsList.setVisibility(View.VISIBLE);
+
+
+
                 buyButton.setEnabled(true);
                 backButton.setEnabled(true);
         }
