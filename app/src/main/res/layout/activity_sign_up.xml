@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".SignUp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:background="@color/white"
+        >
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            android:text="Sign Up"
+            android:textSize="28dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:orientation="vertical"
+            >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="First Name"
+                android:textColorHint="@color/black"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/firstname_edittext"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Last Name"
+                android:textColorHint="@color/black"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/lastname_edittext"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Email"
+                android:textColorHint="@color/black"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/email_signup_edittext"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:hint="Password"
+                android:textColorHint="@color/black"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:id="@+id/password_signup_edittext"
+                android:inputType="textPassword"
+                android:textSize="24dp"
+                android:textColor="@color/black"
+                />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:text="Sign Up"
+                android:textSize="26dp"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/round_corner_black_background"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:id="@+id/signup_button_textview"
+                />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:text="By Clicking Sign Up you are in Agreement of"
+                android:id="@+id/agreement_message_textview"
+                android:textColor="@color/black"
+                android:textSize="10dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                />
+            <TextView
+                android:layout_width="200dp"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="Terms and Condition"
+                android:id="@+id/terms_button_textview"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="0dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2"
+            >
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.05"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Already have an account?"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:text="Sign In"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:id="@+id/login_link_button_textview"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
