@@ -78,7 +78,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="0.2"
                 android:padding="10dp"
-                android:src="@drawable/baseline_favorite_white_18dp"
+                android:src="@drawable/ic_baseline_shopping_cart_24"
                 />
             <TextView
                 android:layout_width="0dp"
@@ -86,7 +86,7 @@
                 android:layout_weight="0.8"
                 android:layout_marginLeft="15dp"
                 android:gravity="center_vertical"
-                android:text="Saved Items"
+                android:text="Cart"
                 android:textColor="@color/white"
                 android:textSize="22dp"
                 />
