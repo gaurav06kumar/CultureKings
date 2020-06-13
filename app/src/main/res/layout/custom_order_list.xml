@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@drawable/round_corner_blue_background"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:text="ORDER NUMBER  #9749434398"
+        android:textSize="18dp"
+        android:textColor="@color/black"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/order_number_li"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:text="Items will be delievered in few days"
+        android:textSize="14dp"
+        android:scrollbars="vertical"
+        android:textColor="#ccc"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:id="@+id/order_items_li"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:text="NZD$ 750"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:textAlignment="viewEnd"
+        android:textStyle="bold"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="5dp"
+        android:paddingRight="10dp"
+        android:id="@+id/order_price_li"
+        />
+
+
+
+</LinearLayout>
