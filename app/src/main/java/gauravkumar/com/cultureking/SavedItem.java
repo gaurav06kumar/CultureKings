@@ -4,9 +4,11 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -61,7 +63,7 @@ public class SavedItem extends AppCompatActivity {
     {
         if(response.contains("error"))
         {
-            AlertAdapter.getObject(SavedItem.this).createMessageAlert("No saved items");
+            AlertAdapter.getObject(SavedItem.this).createMessageAlert("No Items in Cart");
             backButton.setEnabled(true);
             progressBar.setVisibility(View.GONE);
         }
@@ -71,6 +73,20 @@ public class SavedItem extends AppCompatActivity {
             adapter = new CustomlistAdapter(SavedItem.this,savedItems);
             listView.setAdapter(adapter);
             listView.setVisibility(View.VISIBLE);
+
+
+            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                                            @Override
+                                            public void onItemClick (AdapterView< ? > adapter, View view, int position, long arg){
+                                                // TODO Auto-generated method stub
+
+                                                Intent intent = new Intent(SavedItem.this,Cart.class);
+                                                startActivity(intent);
+                                                finish();
+                                            }
+                                        }
+            );
+
             progressBar.setVisibility(View.GONE);
             backButton.setEnabled(true);
         }
