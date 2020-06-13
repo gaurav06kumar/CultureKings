@@ -74,18 +74,19 @@ public class SavedItem extends AppCompatActivity {
             listView.setAdapter(adapter);
             listView.setVisibility(View.VISIBLE);
 
+//*  listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//                                            @Override
+//                                            public void onItemClick (AdapterView< ? > adapter, View view, int position, long arg){
+//                                                // TODO Auto-generated method stub
+//
+//                                                Intent intent = new Intent(SavedItem.this,Cart.class);
+//                                                startActivity(intent);
+//                                                finish();
+//                                            }
+//                                        }
+//            );
+// */
 
-            listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-                                            @Override
-                                            public void onItemClick (AdapterView< ? > adapter, View view, int position, long arg){
-                                                // TODO Auto-generated method stub
-
-                                                Intent intent = new Intent(SavedItem.this,Cart.class);
-                                                startActivity(intent);
-                                                finish();
-                                            }
-                                        }
-            );
 
             progressBar.setVisibility(View.GONE);
             backButton.setEnabled(true);
