@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/black"
+    android:layout_height="match_parent"
+
+    tools:context=".Splash">
+
+    <ImageView
+        android:layout_width="350px"
+        android:layout_height="350px"
+        android:src="@drawable/app_logo"
+        android:id="@+id/app_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="256px"
+        android:text="Be the change"
+        android:textAllCaps="true"
+        android:gravity="center"
+        android:textSize="44dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/app_logo"
+        android:id="@+id/slogan_iv"
+        />
+
+    <ProgressBar
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_below="@id/slogan_iv"
+        android:layout_marginTop="80dp"
+        android:visibility="visible"
+        android:id="@+id/progress_bar"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:id="@+id/connectivity_text"
+        android:text="Loading...."
+        android:visibility="gone"
+        android:layout_below="@id/app_logo"
+        android:layout_marginTop="150dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="16dp"
+
+        />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/retry_text"
+        android:background="@drawable/round_corner_grey_background"
+        android:text="Retry"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:visibility="gone"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="20dp"
+
+        />
+</RelativeLayout>
